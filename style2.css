@@ -1,0 +1,291 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+#menu {
+    position: relative;
+    z-index: 1000;
+  }
+  
+#menu ul
+{
+   
+ list-style: none;
+
+}
+#menu ul li
+{
+    border: 1px solid white; 
+    background-color:black;
+    width: 290px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    text-align: center;
+    color: aliceblue;
+    float: left;
+    position: relative;
+}
+#menu ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+#menu ul li a:hover
+{
+    background-color: green;
+}
+#menu ul li ul li
+
+{
+    width: 290px;
+
+}
+#menu ul ul 
+{
+    position: absolute;
+    display: none;
+    position: absolute;
+
+}
+#menu ul li:hover> ul
+{
+    display: block;
+}
+
+/*code for image sliding */
+
+
+#outerbox {
+  width: 2000px;
+  height: 800px;
+  overflow: hidden;
+}
+
+#sliderbox {
+  position: relative;
+  width: 6870px;
+  height: 600px;
+  animation: slide 20s infinite;
+}
+#sliderbox img {
+  width: 1455px;     /* width ko 100% set kiya hai */
+  height: 650px;
+}
+
+@keyframes slide{
+  0%{
+    left: 0px;
+  }
+  20%{
+    left: 0px;
+  }
+  25%{
+    left: -1455px;
+  }
+  45%{
+    left: -1455px;
+  }
+  50%{
+    left: -2910px;
+  }
+  70%{
+    left: -2910px;
+  }
+  75%{
+    left: -4365px;
+  }
+  100%{
+    left: -4365px;
+  }
+}
+
+
+
+.top_cat
+{
+  border:  0px solid  black;
+ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.top_cat_pro
+{
+  border: 0px solid red;
+  width: 370px;
+  height: 315px;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 4px 4px #b7c1d4;
+  transition: transform 1s;
+
+.top_cat_pro
+{
+  width: 100%;
+
+}
+}
+.top_cat_pro:hover
+{
+
+  transform: scale(1.05);
+
+}
+
+.top_cat_pro img{
+  width: 100%;
+}
+.checked
+{
+color: orange;
+}
+.starr
+{
+  border: 0px solid black;
+    
+  height:30px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.title p{
+  text-align: center;
+  font-size: 17px;
+
+}
+.title b{
+color: green;
+font-size: 20px;
+  
+}
+.btn{
+  border: 0px solid green;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.btn input{
+  height: 40px;
+  width: 130px;
+  border-radius: 7px;
+  border: 0px solid red;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0,4), 0 6px 20px 0 rgba(0,0,0,0,35);
+  background-color: orangered;
+}
+.btn input:hover
+{
+  background-color: green;
+  
+
+}
+table
+{
+  height: 430px;
+}
+input
+{
+  width: 100%;
+  height: 35px;
+  border: 2px solid green;
+  font-size: 22px;
+}
+textarea
+{
+  width: 100%;
+  height: 100px;
+  border: 2px solid green;
+  font-size: 22px;
+}
+select
+{
+  width: 100%;
+  height: 35px;
+  border: 2px solid green;
+  font-size: 22px;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+  color: white;
+}
+.contact
+{
+  width: 100%;
+  height: 430px;
+  border: 2px solid blue;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.section {
+  margin: 20px;
+  width: 20%;
+
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+.form
+{
+    border: 0px solid red;
+    height: 500px;
+    background: url(photos/7.jpg)center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+   
+}
+table td:first-child {
+  font-weight: bold;
+  color: #333;
+}
+.name, .email, .mobile {
+  font-weight: bold;
+  color: #333;
+}
